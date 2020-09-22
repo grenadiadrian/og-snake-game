@@ -1,0 +1,67 @@
+/* Global */
+body {
+    margin: 20px;
+    padding: 20px;
+    background: url("./images/nokia.jpg")
+}
+
+/* Typography */
+h1 {
+    background-color: silver;
+    font-size: 48px;
+    text-align: center;
+    color: #3C4D50;
+}
+
+h2 {
+    font-size: 36px;
+    margin-left: 60%;
+    color: #3C4D50;
+}
+
+/* Layout */
+.container {
+    width: 600px;
+    margin: 100px auto;
+}
+
+.grid {
+    background-color: #9FC156;
+    display: flex;
+    flex-wrap: wrap;
+    width: 400px;
+    height: 400px;
+    border: black 2px solid;
+    margin: 0 auto;
+}
+
+.square {
+    width: 20px;
+    height: 20px;
+}
+
+button {
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 10px;
+    margin-left: 38%;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: gold;
+    color: black;
+}
+
+button:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.snake {
+    background-color: darkgreen;
+}
+
+.apple {
+    background-color: red;
+}
