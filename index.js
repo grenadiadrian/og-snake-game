@@ -15,7 +15,7 @@ let timerId = 0
 
 
 const createGrid = () => {
-    //create 100 of these elements with a for loop
+    //create 200 of these elements with a for loop
     for (let i = 0; i < width*width; i++) {
         //create element
         const square = document.createElement("div")
