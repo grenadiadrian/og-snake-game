@@ -3,6 +3,7 @@ const startButton = document.getElementById("start")
 const scoreDisplay = document.getElementById("score")
 const title = document.querySelector("h1")
 const gameOverSound = new Audio('https://raw.githubusercontent.com/grenadiadrian/og-snake-game/master/sounds/haha.mp3')
+const eatAppleSound = new Audio('https://raw.githubusercontent.com/grenadiadrian/og-snake-game/master/sounds/boop.wav')
 let squares = []
 let currentSnake = [2,1,0]
 let direction = 1
@@ -86,6 +87,7 @@ const move = () => {
         //grow snake array
         currentSnake.push(tail)
         //generate a new apple
+        eatAppleSound.play()
         generateApple()
         //add one to the score
         score++
